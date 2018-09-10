@@ -71,7 +71,10 @@ extension MainVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        let detailVC = DetailVC(nibName: "DetailVC", bundle: nil)
+        
+        detailVC.currentItem = newsItems[indexPath.row]
+        
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
