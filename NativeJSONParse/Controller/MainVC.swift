@@ -14,12 +14,12 @@ class MainVC: UIViewController {
     private var newsItems = [NewsItem]() {
         didSet {
             DispatchQueue.main.async {
-                self.newsTableView.reloadData()
+                self.newsTableView?.reloadData()
             }
         }
     }
     
-    @IBOutlet weak var newsTableView: UITableView!
+    @IBOutlet weak var newsTableView: UITableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()

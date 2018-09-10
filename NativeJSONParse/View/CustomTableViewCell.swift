@@ -10,11 +10,13 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
     
+    //Identifer and the nib name from the xib file
     class var identifier: String { return String(describing: self) }
     class var nib: UINib { return UINib(nibName: identifier, bundle: nil) }
     
-    @IBOutlet weak var newsImageView: UIImageView!
-    @IBOutlet weak var newsTitleLabel: UILabel!
+    //Outlets for the custom table view cell
+    @IBOutlet weak var newsImageView: UIImageView?
+    @IBOutlet weak var newsTitleLabel: UILabel?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,8 +26,9 @@ class CustomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    //MARK: Function to configure the cell
     func configureWithItem(_ item: NewsItem) {
-        newsTitleLabel.text = item.newsTitle?.rendered
+        newsTitleLabel?.text = item.newsTitle?.rendered
     }
     
 }
