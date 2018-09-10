@@ -59,7 +59,12 @@ extension MainVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell {
+            
+            //Configure the cell with the current item
+            cell.configureWithItem(newsItems[indexPath.row])
+            
             return cell
         }
         return UITableViewCell()
