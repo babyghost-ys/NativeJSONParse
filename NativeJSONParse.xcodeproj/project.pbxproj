@@ -54,14 +54,38 @@
 		AA9FB6982146589C00D11483 /* NativeJSONParse */ = {
 			isa = PBXGroup;
 			children = (
+				AA9FB6AB21465AC300D11483 /* Model */,
+				AA9FB6AD21465AD000D11483 /* View */,
+				AA9FB6AC21465ACB00D11483 /* Controller */,
 				AA9FB6992146589C00D11483 /* AppDelegate.swift */,
-				AA9FB69B2146589C00D11483 /* MainVC.swift */,
 				AA9FB69D2146589C00D11483 /* Main.storyboard */,
 				AA9FB6A02146589E00D11483 /* Assets.xcassets */,
 				AA9FB6A22146589E00D11483 /* LaunchScreen.storyboard */,
 				AA9FB6A52146589E00D11483 /* Info.plist */,
 			);
 			path = NativeJSONParse;
+			sourceTree = "<group>";
+		};
+		AA9FB6AB21465AC300D11483 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AA9FB6AC21465ACB00D11483 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA9FB69B2146589C00D11483 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AA9FB6AD21465AD000D11483 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
