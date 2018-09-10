@@ -13,7 +13,7 @@ class DataHandler {
     //MARK: Function to start to request data from the internet
     func requestData(completion: @escaping ((_ newsItems: [NewsItem]) -> Void)) {
         
-        let jsonUrlString = "https://www.winandmac.com/wp-json/wp/v2/posts/?per_page=10"
+        let jsonUrlString = "https://en.winandmac.com/wp-json/wp/v2/posts/?per_page=10"
         
         guard let url = URL(string: jsonUrlString) else { return }
         
