@@ -10,9 +10,10 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var newsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
 }
-
