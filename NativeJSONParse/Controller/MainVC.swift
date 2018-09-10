@@ -70,5 +70,8 @@ extension MainVC: UITableViewDataSource {
         return UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }

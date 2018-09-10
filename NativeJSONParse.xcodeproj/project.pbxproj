@@ -17,6 +17,9 @@
 		AA9FB6B221465DC200D11483 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB6B121465DC200D11483 /* DataHandler.swift */; };
 		AA9FB6B5214662C900D11483 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB6B3214662C900D11483 /* CustomTableViewCell.swift */; };
 		AA9FB6B6214662C900D11483 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB6B4214662C900D11483 /* CustomTableViewCell.xib */; };
+		AAE88AE42146727800473AA9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE88AE22146727800473AA9 /* DetailViewController.swift */; };
+		AAE88AE52146727800473AA9 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE88AE32146727800473AA9 /* DetailViewController.xib */; };
+		AAE88AE72146738700473AA9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE88AE62146738700473AA9 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		AA9FB6B121465DC200D11483 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		AA9FB6B3214662C900D11483 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AA9FB6B4214662C900D11483 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		AAE88AE22146727800473AA9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AAE88AE32146727800473AA9 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		AAE88AE62146738700473AA9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		C6D84CD07F7476B46721F065 /* Pods_NativeJSONParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeJSONParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE88AE72146738700473AA9 /* WebKit.framework in Frameworks */,
 				0B0B66F63D4436917B3C3AB3 /* Pods_NativeJSONParse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +67,7 @@
 		658FABB4C1035BB43516B9D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAE88AE62146738700473AA9 /* WebKit.framework */,
 				C6D84CD07F7476B46721F065 /* Pods_NativeJSONParse.framework */,
 			);
 			name = Frameworks;
@@ -110,6 +118,7 @@
 		AA9FB6AC21465ACB00D11483 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AAE88AE22146727800473AA9 /* DetailViewController.swift */,
 				AA9FB69B2146589C00D11483 /* MainVC.swift */,
 			);
 			path = Controller;
@@ -120,6 +129,7 @@
 			children = (
 				AA9FB6B3214662C900D11483 /* CustomTableViewCell.swift */,
 				AA9FB6B4214662C900D11483 /* CustomTableViewCell.xib */,
+				AAE88AE32146727800473AA9 /* DetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +196,7 @@
 			files = (
 				AA9FB6A42146589E00D11483 /* LaunchScreen.storyboard in Resources */,
 				AA9FB6A12146589E00D11483 /* Assets.xcassets in Resources */,
+				AAE88AE52146727800473AA9 /* DetailViewController.xib in Resources */,
 				AA9FB6B6214662C900D11483 /* CustomTableViewCell.xib in Resources */,
 				AA9FB69F2146589C00D11483 /* Main.storyboard in Resources */,
 			);
@@ -240,6 +251,7 @@
 				AA9FB69C2146589C00D11483 /* MainVC.swift in Sources */,
 				AA9FB6B5214662C900D11483 /* CustomTableViewCell.swift in Sources */,
 				AA9FB6B221465DC200D11483 /* DataHandler.swift in Sources */,
+				AAE88AE42146727800473AA9 /* DetailViewController.swift in Sources */,
 				AA9FB6AF21465B5F00D11483 /* NewsItem.swift in Sources */,
 				AA9FB69A2146589C00D11483 /* AppDelegate.swift in Sources */,
 			);
@@ -391,8 +403,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
 				INFOPLIST_FILE = NativeJSONParse/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winandmac.NativeJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -408,8 +423,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
 				INFOPLIST_FILE = NativeJSONParse/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.winandmac.NativeJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
