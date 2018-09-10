@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0B66F63D4436917B3C3AB3 /* Pods_NativeJSONParse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D84CD07F7476B46721F065 /* Pods_NativeJSONParse.framework */; };
 		AA9FB69A2146589C00D11483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB6992146589C00D11483 /* AppDelegate.swift */; };
 		AA9FB69C2146589C00D11483 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB69B2146589C00D11483 /* MainVC.swift */; };
 		AA9FB69F2146589C00D11483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB69D2146589C00D11483 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6ABDBB7E754021CB5A1BAE84 /* Pods-NativeJSONParse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeJSONParse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NativeJSONParse/Pods-NativeJSONParse.debug.xcconfig"; sourceTree = "<group>"; };
+		818CF8629A58E90DD71F5E1D /* Pods-NativeJSONParse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeJSONParse.release.xcconfig"; path = "Pods/Target Support Files/Pods-NativeJSONParse/Pods-NativeJSONParse.release.xcconfig"; sourceTree = "<group>"; };
 		AA9FB6962146589C00D11483 /* NativeJSONParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeJSONParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9FB6992146589C00D11483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA9FB69B2146589C00D11483 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		AA9FB6B121465DC200D11483 /* DataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		AA9FB6B3214662C900D11483 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AA9FB6B4214662C900D11483 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		C6D84CD07F7476B46721F065 /* Pods_NativeJSONParse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NativeJSONParse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0B66F63D4436917B3C3AB3 /* Pods_NativeJSONParse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59DEECA3EE83B981F71EBFBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6ABDBB7E754021CB5A1BAE84 /* Pods-NativeJSONParse.debug.xcconfig */,
+				818CF8629A58E90DD71F5E1D /* Pods-NativeJSONParse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		658FABB4C1035BB43516B9D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6D84CD07F7476B46721F065 /* Pods_NativeJSONParse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA9FB68D2146589C00D11483 = {
 			isa = PBXGroup;
 			children = (
 				AA9FB6982146589C00D11483 /* NativeJSONParse */,
 				AA9FB6972146589C00D11483 /* Products */,
+				59DEECA3EE83B981F71EBFBB /* Pods */,
+				658FABB4C1035BB43516B9D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA9FB6A82146589E00D11483 /* Build configuration list for PBXNativeTarget "NativeJSONParse" */;
 			buildPhases = (
+				F53ECB094B40F86D16AA6B91 /* [CP] Check Pods Manifest.lock */,
 				AA9FB6922146589C00D11483 /* Sources */,
 				AA9FB6932146589C00D11483 /* Frameworks */,
 				AA9FB6942146589C00D11483 /* Resources */,
+				9686F3A981C9454353C8507C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +192,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9686F3A981C9454353C8507C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NativeJSONParse/Pods-NativeJSONParse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NativeJSONParse/Pods-NativeJSONParse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F53ECB094B40F86D16AA6B91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NativeJSONParse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AA9FB6922146589C00D11483 /* Sources */ = {
@@ -320,16 +385,14 @@
 		};
 		AA9FB6A92146589E00D11483 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ABDBB7E754021CB5A1BAE84 /* Pods-NativeJSONParse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
 				INFOPLIST_FILE = NativeJSONParse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winandmac.NativeJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -339,16 +402,14 @@
 		};
 		AA9FB6AA2146589E00D11483 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 818CF8629A58E90DD71F5E1D /* Pods-NativeJSONParse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
 				INFOPLIST_FILE = NativeJSONParse/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.winandmac.NativeJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

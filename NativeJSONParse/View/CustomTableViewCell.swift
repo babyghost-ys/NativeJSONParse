@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CustomTableViewCell: UITableViewCell {
     
@@ -29,6 +30,6 @@ class CustomTableViewCell: UITableViewCell {
     //MARK: Function to configure the cell
     func configureWithItem(_ item: NewsItem) {
         newsTitleLabel?.text = item.newsTitle?.rendered
+        newsImageView?.kf.setImage(with: URL(string: item.imageUrl ?? ""))
     }
-    
 }
