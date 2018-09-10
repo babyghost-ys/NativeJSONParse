@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA9FB69A2146589C00D11483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB6992146589C00D11483 /* AppDelegate.swift */; };
-		AA9FB69C2146589C00D11483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB69B2146589C00D11483 /* ViewController.swift */; };
+		AA9FB69C2146589C00D11483 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9FB69B2146589C00D11483 /* MainVC.swift */; };
 		AA9FB69F2146589C00D11483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB69D2146589C00D11483 /* Main.storyboard */; };
 		AA9FB6A12146589E00D11483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB6A02146589E00D11483 /* Assets.xcassets */; };
 		AA9FB6A42146589E00D11483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9FB6A22146589E00D11483 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		AA9FB6962146589C00D11483 /* NativeJSONParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeJSONParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA9FB6992146589C00D11483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA9FB69B2146589C00D11483 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA9FB69B2146589C00D11483 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		AA9FB69E2146589C00D11483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA9FB6A02146589E00D11483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA9FB6A32146589E00D11483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				AA9FB6992146589C00D11483 /* AppDelegate.swift */,
-				AA9FB69B2146589C00D11483 /* ViewController.swift */,
+				AA9FB69B2146589C00D11483 /* MainVC.swift */,
 				AA9FB69D2146589C00D11483 /* Main.storyboard */,
 				AA9FB6A02146589E00D11483 /* Assets.xcassets */,
 				AA9FB6A22146589E00D11483 /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9FB69C2146589C00D11483 /* ViewController.swift in Sources */,
+				AA9FB69C2146589C00D11483 /* MainVC.swift in Sources */,
 				AA9FB69A2146589C00D11483 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
 				INFOPLIST_FILE = NativeJSONParse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winandmac.NativeJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2S6B5447W9;
 				INFOPLIST_FILE = NativeJSONParse/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.winandmac.NativeJSONParse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
